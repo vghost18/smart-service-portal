@@ -17,7 +17,6 @@ Role: Acts as the single entry point for the client-side application.
 Logic: Utilizes http-proxy-middleware to route traffic to specific micro-nodes based on URL context (/auth/* or /requests/*), abstracting the internal network complexity from the frontend.
 
 2. Authentication Service
-3. 
 Role: The Identity Provider (IdP).
 
 Logic: Implements stateless authentication by generating Base64-encoded identity tokens. It provides a synchronous /validate endpoint for peers to verify token integrity and retrieve Role-Based Access Control (RBAC) claims.
